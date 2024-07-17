@@ -7,13 +7,14 @@ const Counter = () => {
     const decrement = () => {  
         if (count > 0) {  
             setCount(count - 1);  
-        }  
-        const reset = () => {
-            if (count != 0 ) {
-                setCount(0);
-            }
-        }
-    };  
+        } 
+    }; 
+    const reset = () => {  
+        if (count > 0) {  
+            setCount(count - 1);  
+        } 
+    }; 
+  
     return (  
         <div>  
             <h2>Counter</h2> 
